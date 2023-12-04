@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Referências</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gerador de Referências Bibliográficas</h1>
+
+  <form action="#" method="get">
+    <label for="tipoReferencia">Escolha o tipo de referência desejada:</label>
+    <select id="tipoReferencia" name="tipoReferencia">
+      <option value="">Escolha sua opção neste campo</option>
+      <option value="livro">Referência de Livro</option>
+      <option value="site">Referência de Site</option>
+      <option value="artigo">Referência de Artigo de Revista</option>
+      <option value="documentario">Referencia de Documentario</option>
+      <option value="publicacao em uma rede social">Referencia de Publicação em uma Rede Social</option>
+    </select>
+    <br><br>
+
+    
+    <div id="camposReferencia" class="referencia">
+      
+      <div id="livro" class="referencia-campos" style="display:none;">
+        Título do Livro: <input type="text" name="tituloLivro"><br>
+        Autor (a): <input type="text" name="autorLivro"><br>
+        Ano: <input type="text" name="anoLivro"><br>
+        Editora: <input type="text" name="editoraLivro"><br>
+        Cidade: <input type="text" name="cidadeLivro"><br>
+      </div>
+
+      
+      <div id="site" class="referencia-campos" style="display:none;">
+        
+        Título da Página: <input type="text" name="tituloSite"><br>
+        Cidade: <input type="text" name="cidadeLivro"><br>
+        URL: <input type="text" name="urlSite"><br>
+        Acesso em: <input type="text" name="acessoSite"><br>
+        Ano: <input type="text" name="revistaAno"><br>
+        
+      </div>
+
+      
+      <div id="artigo" class="referencia-campos" style="display:none;">
+        
+        Título do Artigo: <input type="text" name="tituloArtigo"><br>
+        Autor (a) do Artigo: <input type="text" name="autorArtigo"><br>
+        Revista: <input type="text" name="revistaArtigo"><br>
+        Ano: <input type="text" name="revistaAno"><br>
+        Cidade: <input type="text" name="revistaCidade"><br>
+        
+      </div>
+
+      
+      <div id="documentario" class="referencia-campos" style="display:none;">
+        
+        Título do Documentario: <input type="text" name="tituloDocumentario"><br>
+        Autor (a) do Documentario: <input type="text" name="autorDocumentario"><br>
+        Documentario: <input type="text" name="revistaDocumentario"><br>
+        Ano : <input type="text" name="revistaAno"><br>
+        Cidade: <input type="text" name="revistaCidade"><br>
+        
+      </div>
+
+      
+      <div id="publicacao em uma rede social" class="referencia-campos" style="display:none;">
+        
+        Título da publicação em uma rede social: <input type="text" name="tituloPublicacaoRedeSocial"><br>
+        Autor (a) da publicação em uma rede social: <input type="text" name="autorPublicacaoRedeSocial"><br>
+        Publicação: <input type="text" name="revistaPublicacaoRedeSocial"><br>
+        Data da publicação: <input type="text" name="revistaPublicacaoRedeSocial"><br>
+        Plataforma em que foi publicada: <input type="text" name="revistaPublicacaoRedeSocial"><br>
+        
+      </div>
+    </div>
+
+    <div id="referenciaGerada"></div>
+
+    <button type="button" id="gerar">Gerar Referência</button>
+    <button type="button" id="copiar">Copiar</button>
+    <button type="button" id="limpar">Limpar Campos</button>
+  </form> 
+  <script src="index.js"></script>
+</body>
+</html>
